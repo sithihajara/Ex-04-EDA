@@ -31,6 +31,7 @@ find the pairwise correlation of all columns in the dataframe(.corr()).
 Save the final data set into the file.
 
 ## CODE 
+```
 import pandas as pd 
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -64,6 +65,7 @@ pd.crosstab(df["Total"],df["Payment"])
 pd.crosstab(df["Quantity"],df["City"])
 df.corr()
 sns.heatmap(df.corr(),annot=True)
+```
 ## OUTPUT
 ![f1](https://user-images.githubusercontent.com/94219582/162558694-1896ea54-b52c-4d9d-b3ae-dc098f83334b.PNG)
 ![f2](https://user-images.githubusercontent.com/94219582/162558702-a7c03ecd-bb90-4bc2-8903-2ba45db70b88.PNG)
